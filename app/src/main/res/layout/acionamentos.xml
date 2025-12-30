@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tela_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/fundo_header"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:background="@color/azulclaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="154dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/img_2" />
+
+    <TextView
+        android:id="@+id/texto_saudacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical|end"
+        android:text="Olá,\nFelipe!"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/fundo_header"
+        app:layout_constraintEnd_toStartOf="@+id/botao_notificacoes"
+        app:layout_constraintTop_toTopOf="@+id/fundo_header" />
+
+    <ImageButton
+        android:id="@+id/botao_notificacoes"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/azulclaro"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/img_3" />
+
+    <View
+        android:id="@+id/fundo_footer"
+        android:layout_width="391dp"
+        android:layout_height="81dp"
+        android:background="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botao_menu_chat"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/img_14" />
+
+    <ImageButton
+        android:id="@+id/botao_menu_acionamentos"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/img_13" />
+
+    <ImageButton
+        android:id="@+id/botao_menu_servicos"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978"
+        app:srcCompat="@drawable/img_12" />
+
+    <ImageButton
+        android:id="@+id/botao_menu_inicio"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/img_11" />
+
+    <TextView
+        android:id="@+id/label_menu_servicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serviços"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/label_menu_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/label_menu_acionamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acionamentos"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/label_menu_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/fundo_footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fundo_header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
+
+            <View
+                android:id="@+id/decorador_titulo"
+                android:layout_width="5dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/azul"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titulo_acionamentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Acionamentos"
+                android:textColor="@color/black"
+                android:textSize="37dp"
+                app:layout_constraintBottom_toBottomOf="@id/decorador_titulo"
+                app:layout_constraintStart_toEndOf="@id/decorador_titulo"
+                app:layout_constraintTop_toTopOf="@id/decorador_titulo" />
+
+
+            <TextView
+                android:id="@+id/label_mes_setembro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:text="Setembro/2025 "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/decorador_titulo" />
+
+            <View
+                android:id="@+id/card_fundo_1"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/capsula"
+                android:backgroundTint="@color/cinza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_mes_setembro" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_num_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Número de Sinistro: 1004200483581"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_fundo_1"
+                app:layout_constraintStart_toStartOf="@+id/card_fundo_1"
+                app:layout_constraintTop_toTopOf="@+id/card_fundo_1" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_tipo_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Guincho/Reboque"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_1"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_1"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_num_1" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_data_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Data da comunicação: 16/09/2025 às 10:05"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_1"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_1"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_tipo_1" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_status_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Situação: Liquidado"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_1"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_1"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_data_1" />
+
+            <TextView
+                android:id="@+id/label_mes_janeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Janeiro/2025 "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_fundo_1" />
+
+            <View
+                android:id="@+id/card_fundo_2"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/capsula"
+                android:backgroundTint="@color/cinza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_mes_janeiro" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_num_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Número de Sinistro: 1004220565645"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_fundo_2"
+                app:layout_constraintStart_toStartOf="@+id/card_fundo_2"
+                app:layout_constraintTop_toTopOf="@+id/card_fundo_2" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_tipo_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Chaveiro"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_2"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_2"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_num_2" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_data_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Data da comunicação: 10/01/2025 às 14:17"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_2"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_2"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_tipo_2" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_status_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Situação: Liquidado"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_2"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_2"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_data_2" />
+
+            <TextView
+                android:id="@+id/label_mes_dezembro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:text="Dezembro/2024 "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_fundo_2" />
+
+            <View
+                android:id="@+id/card_fundo_3"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/capsula"
+                android:backgroundTint="@color/cinza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_mes_dezembro" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_num_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Número de Sinistro: 1004200475865"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_fundo_3"
+                app:layout_constraintStart_toStartOf="@+id/card_fundo_3"
+                app:layout_constraintTop_toTopOf="@+id/card_fundo_3" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_tipo_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Guincho/Reboque"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_3"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_3"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_num_3" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_data_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Data da comunicação: 12/12/2024 às 15:07"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_3"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_3"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_tipo_3" />
+
+            <TextView
+                android:id="@+id/texto_sinistro_status_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Situação: Liquidado"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/texto_sinistro_num_3"
+                app:layout_constraintStart_toStartOf="@+id/texto_sinistro_num_3"
+                app:layout_constraintTop_toBottomOf="@+id/texto_sinistro_data_3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

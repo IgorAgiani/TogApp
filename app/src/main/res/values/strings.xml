@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TogApp</string>
+    <string name="logo_do_app">Logo do App</string>
+
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="ja_tem_conta">Já tem conta?</string>
+    <string name="faca_login">Faça login</string>
+    <string name="hint_seu_nome">seu nome</string>
+    <string name="hint_seu_email">seu email</string>
+    <string name="hint_data_nascimento">data de nascimento</string>
+    <string name="hint_celular_ddd">celular com ddd</string>
+    <string name="hint_digite_senha">digite sua senha</string>
+    <string name="hint_digite_senha_novamente">digite sua senha novamente</string>
+    <string name="registrar">registrar</string>
+
+    <string-array name="servicos_array">
+        <item>Faturas</item>
+        <item>Processo Sinistro</item>
+        <item>Renovação Apólice</item>
+    </string-array>
+
+
+</resources>

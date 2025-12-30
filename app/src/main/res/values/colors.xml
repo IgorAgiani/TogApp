@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pd">#EDF1F3</color>
+    <color name="azulescuro">#092A6B</color>
+    <color name="azul">#0066FF</color>
+    <color name="cinzaclaro">#D9D9D9</color>
+    <color name="black">#FF000000</color>
+    <color name="azulclaro">#0066FF</color>
+    <color name="amarelo">#FFC000</color>
+    <color name="cinza">#e6e6e6</color>
+
+
+</resources>

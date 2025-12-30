@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Quando o campo está com foco -->
+    <item android:state_focused="true" android:drawable="@drawable/circle_edittext_focused" />
+
+    <!-- Estado normal (sem foco) -->
+    <item android:drawable="@drawable/circle_edittext_normal" />
+</selector>
