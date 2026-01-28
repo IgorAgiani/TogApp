@@ -1,6 +1,8 @@
 package com.example.togapp;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -27,5 +29,15 @@ public class WebViewActivity extends AppCompatActivity {
         if (url != null) {
             webView.loadUrl(url);
         }
+
+
+        ImageButton btnFechar = findViewById(R.id.btnFechar);
+
+        btnFechar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }
