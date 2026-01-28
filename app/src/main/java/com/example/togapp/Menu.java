@@ -18,6 +18,7 @@ public class Menu extends AppCompatActivity {
     private Button botaoDetalhesPlano;
     private Button botaoAbrirSinistro;
     private Button botaoFaturas;
+    private Button botaoRenovacaoAtalho;
     private Button botaoAssistencia24h;
     private ImageView bannerAnuncio;
     private ImageButton botaoMenuInicio;
@@ -52,6 +53,7 @@ public class Menu extends AppCompatActivity {
 
         botaoFaturas = findViewById(R.id.botao_faturas);
         botaoAssistencia24h = findViewById(R.id.botao_assistencia_24h);
+        botaoRenovacaoAtalho = findViewById(R.id.botao_renovacao_atalho);
 
         bannerAnuncio = findViewById(R.id.banner_anuncio);
 
@@ -112,6 +114,18 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+
+
+        botaoRenovacaoAtalho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), WebViewActivity.class);
+
+                intent.putExtra("url_destino", "https://chatbot.togarantido.com.br/ifood-renovacao");
+
+                startActivity(intent);
+            }
+        });
         bannerAnuncio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
