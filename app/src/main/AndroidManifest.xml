@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,15 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-            <activity android:name=".Login" />
-            <activity android:name=".Cadastro" />
-            <activity android:name=".RecuperarSenha" />
-            <activity android:name=".RecuperaCodigo" />
-            <activity android:name=".NovaSenha" />
-            <activity android:name=".Menu" />
-            <activity android:name=".Servicos" />
-            <activity android:name=".Acionamentos" />
-            <activity android:name=".Chat" />
+        <activity android:name=".Login" />
+        <activity android:name=".Cadastro" />
+        <activity android:name=".RecuperarSenha" />
+        <activity android:name=".RecuperaCodigo" />
+        <activity android:name=".NovaSenha" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Servicos" />
+        <activity android:name=".Acionamentos" />
+        <activity android:name=".Chat" />
+        <activity android:name=".WebViewActivity" />
     </application>
 
 </manifest>
