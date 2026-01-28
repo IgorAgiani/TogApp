@@ -1,7 +1,5 @@
 package com.example.togapp;
 
-import static android.content.Intent.getIntent;
-
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -20,6 +18,7 @@ public class WebViewActivity extends AppCompatActivity {
 
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
+        settings.setDomStorageEnabled(true);
 
         webView.setWebViewClient(new WebViewClient());
 
